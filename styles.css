@@ -1,25 +1,29 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #f8f8f8;
     color: #333;
     margin: 0;
 }
 
 header {
-    background-color: #ffcccb;
+    background-color: #ffffff; /* Fondo blanco */
     padding: 20px;
-    text-align: center;
+    display: flex; /* Usar flexbox para alinear elementos */
+    justify-content: space-between; /* Espacio entre logo y nav */
+    align-items: center; /* Centrar verticalmente */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para el encabezado */
 }
 
 header .logo h1 {
     margin: 0;
     font-size: 2.5em;
-    color: #d50000;
+    color: #866145; /* Color del nombre de la página */
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0; /* Eliminar margen */
 }
 
 nav ul li {
@@ -29,7 +33,11 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #d50000;
+    color: #919191; /* Color de los enlaces de navegación */
+}
+
+nav ul li a:hover {
+    color: #d50000; /* Color al pasar el mouse sobre los enlaces */
 }
 
 .hero {
@@ -42,6 +50,7 @@ nav ul li a {
 .hero h2 {
     font-size: 2em;
     margin: 0;
+    font-family: 'Poppins', sans-serif; /* Cambiado a Poppins */
 }
 
 .hero p {
@@ -90,4 +99,64 @@ footer {
     text-align: center;
     padding: 20px;
     background-color: #ffcccb;
+}
+
+nav ul li a i {
+    margin-right: 5px; /* Espacio entre el ícono y el texto */
+    font-size: 1.2em; /* Tamaño del ícono */
+}
+
+/* Estilos para el carrito */
+#cart {
+    padding: 20px;
+    background-color: #fff; /* Fondo blanco para el carrito */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para el carrito */
+}
+
+#cart h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #866145; /* Color del título */
+}
+
+#cart-items {
+    list-style-type: none; /* Eliminar viñetas */
+    padding: 0; /* Eliminar padding */
+}
+
+#cart-items li {
+    display: flex; /* Usar flexbox para alinear elementos */
+    align-items: center; /* Centrar verticalmente */
+    margin-bottom: 15px; /* Espacio entre productos */
+    padding: 10px;
+    border: 1px solid #ccc; /* Borde para cada producto */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #f9f9f9; /* Fondo gris claro */
+}
+
+#cart-items img {
+    width: 80px; /* Ancho de la imagen */
+    height: auto; /* Mantener la proporción */
+    margin-right: 15px; /* Espacio entre la imagen y el texto */
+}
+
+#cart-items button {
+    background-color: #d50000; /* Color de fondo del botón de quitar */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 5px 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar el mouse */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+#cart-items button:hover {
+    background-color: #ff0000; /* Color al pasar el mouse */
+}
+
+#total-price {
+    font-size: 1.5em; /* Tamaño de fuente más grande para el total */
+    margin-top: 20px; /* Espacio superior */
+    font-weight: bold; /* Negrita */
 }

@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Pastelería</title>
+    <title>Delicias de Stefany y Stiven</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <h1>Delicias de la Abuela</h1>
+            <h1>Delicias de Stefany y Stiven</h1>
         </div>
         <nav>
             <ul>
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#products">Productos</a></li>
-                <li><a href="#cart">Carrito</a></li>
+                <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> Sobre Nosotros</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+                <li>
+                    <a href="cart.html"><i class="fas fa-shopping-cart"></i> Carrito <span id="cart-count">0</span></a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -23,7 +28,7 @@
     <section id="home" class="hero">
         <h2>Bienvenido a nuestra Pastelería</h2>
         <p>Disfruta de los mejores postres artesanales.</p>
-        <a href="#products" class="btn">Ver Productos</a>
+        <a href="products.html" class="btn">Ver Productos</a>
     </section>
     
     <section id="products">
@@ -32,33 +37,27 @@
             <div class="product">
                 <img src="Torta-3-Leches.jpg" alt="Postre de 3 Leches">
                 <h3>Postre de 3 Leches</h3>
-                <p>$10,000</p>
+                <p>$10,000 COP</p>
                 <button>Añadir al carrito</button>
             </div>
             <div class="product">
                 <img src="milo.jpg" alt="Postre de Milo">
                 <h3>Postre de Milo</h3>
-                <p>$10,000</p>
+                <p>$10,000 COP</p>
                 <button>Añadir al carrito</button>
             </div>
             <div class="product">
                 <img src="maracuya.jpg" alt="Postre de Maracuyá">
                 <h3>Postre de Maracuyá</h3>
-                <p>$10,000</p>
+                <p>$10,000 COP</p>
                 <button>Añadir al carrito</button>
             </div>
             <!-- Agrega más productos aquí -->
         </div>
     </section>
     
-    <section id="cart">
-        <h2>Carrito de Compras</h2>
-        <ul id="cart-items"></ul>
-        <p id="total-price">Total: $0.00</p>
-    </section>
-    
     <footer>
-        <p>&copy; 2025 Delicias de la Abuela</p>
+        <p>&copy; 2025 Delicias de Stefany y Stiven</p>
     </footer>
     <script src="script.js"></script>
 </body>
