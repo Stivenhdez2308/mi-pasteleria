@@ -14,6 +14,7 @@ header {
 header .logo h1 {
     margin: 0;
     font-size: 2.5em;
+    color: #d50000;
 }
 
 nav ul {
@@ -26,10 +27,16 @@ nav ul li {
     margin: 0 15px;
 }
 
+nav ul li a {
+    text-decoration: none;
+    color: #d50000;
+}
+
 .hero {
     background-color: #ffe4e1;
     padding: 50px 20px;
     text-align: center;
+    border-bottom: 2px solid #d50000;
 }
 
 .hero h2 {
@@ -47,6 +54,11 @@ nav ul li {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff1493;
 }
 
 .product-grid {
@@ -62,6 +74,11 @@ nav ul li {
     background-color: #fff;
     text-align: center;
     border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.05);
 }
 
 .product img {

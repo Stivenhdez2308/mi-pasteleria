@@ -12,10 +12,10 @@ function updateCart() {
     cartItems.innerHTML = '';
     cart.forEach(item => {
         const li = document.createElement('li');
-        li.textContent = `${item.name} - €${item.price.toFixed(2)}`;
+        li.textContent = `${item.name} - $${item.price.toFixed(2)}`;
         cartItems.appendChild(li);
     });
-    document.getElementById('total-price').textContent = `Total: €${total.toFixed(2)}`;
+    document.getElementById('total-price').textContent = `Total: $${total.toFixed(2)}`;
 }
 
 // Añadir eventos a los botones
@@ -23,7 +23,7 @@ document.querySelectorAll('.product button').forEach(button => {
     button.addEventListener('click', () => {
         const productElement = button.parentElement;
         const productName = productElement.querySelector('h3').innerText;
-        const productPrice = parseFloat(productElement.querySelector('p').innerText.replace('Precio: €', ''));
+        const productPrice = parseFloat(productElement.querySelector('p').innerText.replace('$', '').replace('.', '').replace(',', '.'));
         addToCart(productName, productPrice);
     });
 });
