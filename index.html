@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Pastelería</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Pastelería</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#products">Productos</a></li>
+                <li><a href="#cart">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>Bienvenido a Mi Pastelería</h2>
+        <p>Deliciosos postres para todos.</p>
+    </section>
+    
+    <section id="products">
+        <h2>Productos</h2>
+        <div class="product">
+            <h3>Pastel de Fresa</h3>
+            <p>Precio: €11.99</p>
+            <button>Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <h3>Cheesecake</h3>
+            <p>Precio: €9.99</p>
+            <button>Añadir al carrito</button>
+        </div>
+        <div class="product">
+            <h3>Pastel de Chocolate</h3>
+            <p>Precio: €12.99</p>
+            <button>Añadir al carrito</button>
+        </div>
+    </section>
+    
+    <section id="cart">
+        <h2>Carrito de Compras</h2>
+        <ul id="cart-items"></ul>
+        <p id="total-price">Total: €0.00</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Mi Pastelería</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
