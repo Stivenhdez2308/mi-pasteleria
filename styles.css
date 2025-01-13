@@ -37,14 +37,19 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #d50000; /* Color al pasar el mouse sobre los enlaces */
+    color: #f0b0ad; /* Color al pasar el mouse sobre los enlaces */
 }
 
 .hero {
-    background-color: #ffe4e1;
-    padding: 50px 20px;
-    text-align: center;
-    border-bottom: 2px solid #d50000;
+    background-image: url('fondo.jpeg'); /* Fondo con la imagen */
+    background-size: cover; /* Cubrir todo el contenedor */
+    background-position: left; /* Alinear la imagen a la izquierda */
+    padding: 30px 160px; /* Aumentar el padding superior e inferior */
+    text-align: left; /* Alinear el texto a la izquierda */
+    color: white; /* Cambiar el color del texto para mejor contraste */
+    min-height: 440px; /* Altura mínima del contenedor */
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
 }
 
 .hero h2 {

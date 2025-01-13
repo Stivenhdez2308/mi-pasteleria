@@ -51,6 +51,9 @@ if (document.getElementById('cart-items')) {
     updateCartIcon();
 }
 
+// Actualizar el ícono del carrito en todas las páginas
+updateCartIcon(); // Llama a esta función para actualizar el contador en todas las páginas
+
 // Añadir eventos a los botones
 document.querySelectorAll('.product button').forEach(button => {
     button.addEventListener('click', () => {
